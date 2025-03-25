@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankieta-Świadomość Konsumencka</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Ankieta – Świadomość Konsumencka</h2>
+        <P class="description">
+            Poniższa ankieta dotyczy wpływu ogólnej świadomości konsumenckiej na wybory zakupowe samochodów elektrycznych, spalinowych i hybrydowych. 
+            Ankieta jest anonimowa, a uzyskane dane zostaną wykorzystane wyłącznie do celów naukowych. Udział w badaniu jest dobrowolny i można z niego zrezygnować w dowolnym momencie.
+        </P>
+        <P class="description">
+            Jeżeli zgadzasz na udział w badaniu, proszę zaznaczyć poniższą opcję: 
+         </P>
+        <form>
+            <label for="consent">
+                <input type="checkbox" id="consent" name="consent" value="yes"> Zgadzam się na udział w badaniu
+            </label>
+        </form>
+        <form>
+            <!--PYTANIA DEMOGRAFICZNE------------------------------------------------------->
+            <label>Płeć:</label>
+            <select>
+                <option>Wybierz</option>
+                <option>Mężczyzna</option>
+                <option>Kobieta</option>
+                <option>Inna</option>
+            </select>
+            <label>Wiek:</label><select>
+                <option>Wybierz</option>
+                <option>18-25</option>
+                <option>26-35</option>
+                <option>36-45</option>
+                <option>46-55</option>
+                <option>56+</option>
+            </select>     
+            <label>Miejsce zamieszkania:</label>
+            <select>
+                <option>Wybierz</option>
+                <option>Wieś</option>
+                <option>Małe miasto (do 50 tys. mieszkańców)</option>
+                <option>Średnie miasto (50-200 tys. mieszkańców)</option>
+                <option>Duże miasto (powyżej 200 tys. mieszkańców)</option> 
+            </select>
+            <label>Wykształcenie:</label>
+            <select>
+                <option>Wybierz</option>
+                <option>Podstawowe</option>
+                <option>Średnie</option>
+                <option>Wyższe</option>
+            </select>
+            <label>Miesięczny dochód netto </label>
+            <select>
+                <option>Wybierz</option>
+                <option>do 3700 zł</option>
+                <option>3700-5000 zł</option>
+                <option>5000-9000 zł</option>
+                <option>powyżej 9000 zł</option>
+            </select>      
+            <!--PYTANIA DEMOGRAFICZNE------------------------------------------------------->
+            <label>1. Czy posiada Pan/Pani samochód?</label>
+            <select>
+                <option>Wybierz</option>
+                <option>Tak</option>
+                <option>Nie</option>
+            </select>
+
+            <label>2. Jakie czynniki są dla Pana/Pani najważniejsze przy wyborze samochodu? (Można wybrać maks. 3)</label>
+            <select multiple>
+                <option>Cena</option>
+                <option>Koszty eksploatacji</option>
+                <option>Ekologia</option>
+                <option>Marka i design</option>
+                <option>Zasięg</option>
+                <option>Wydajność silnika</option>
+            </select>
+
+            <label>3. Jeżeli kupowałbyś używany 5 letni pojazd to w tej samej cenie wolałabyś kupić:
+            </label>
+            <select>
+                <option>Wybierz</option>
+                <option>Spalinowy</option>
+                <option>Elektryczny</option>
+                <option>Hybrydowy</option>
+            </select>
+
+            <label>4. Jak długiego okresu pracy oczekujesz od zakupionego w salonie samochodu?  (Do przeredagowania)</label>
+            <select>
+                <option>Wybierz</option>
+                <option>2-5 </option>
+                <option>5-8</option>
+                <option>8-12</option>
+                <option>12-15</option>
+                <option>15+</option>
+            </select>
+
+            <button type="submit" class="submit-button">Prześlij</button>
+        </form>
+    </div>
+</body>
+</html>
